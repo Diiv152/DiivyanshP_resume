@@ -1,0 +1,109 @@
+{
+    "header": {
+        "name": "Diivyansh Parekh",
+        "title": "First Year Computer Science Student",
+        "email": "diivyanshparekh15@gmail.com",
+        "phone": "+91 8591076292",
+        "linkedIn": "https://www.linkedin.com/in/diivyansh-parekh-0b9543304/",
+        "github": "https://github.com/Diiv152"
+    },
+    "education": [
+        {
+            "institution": "Shiv Nadar University",
+            "degree": "Dual Degree : B.S. in Computer Science",
+            "gpa": "3.55/4.0",
+            "location": "Greater Noida, Delhi NCR",
+            "graduationDate": "May 2027",
+            "coursework": [
+                "Object Oriented Programming",
+                "Data Structures and Algorithms",
+                "GUI Development with Swing",
+                "Digital Design and Computer Architecture"
+            ]
+        },
+        {
+            "institution": "Arizona State University",
+            "degree": "Dual Degree : B.S. in Computer Science",
+            "gpa": "N.A/4.0",
+            "location": "Tempe, AZ",
+            "graduationDate": "May 2029",
+            "coursework": [
+                "Machine Learning Fundamentals",
+                "Software Development",
+                "Artificial Intelligence",
+                "Database Management and Operating Systems"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "Tech Innovators Inc.",
+            "role": "Senior Frontend Engineer",
+            "location": "San Francisco, CA",
+            "dates": "Aug 2020 - Present",
+            "bulletPoints": [
+                "Led the migration of a legacy monolithic application to a modern micro-frontend architecture using Next.js and Tailwind CSS.",
+                "Optimized website performance, reducing LCP by 40% and improving SEO rankings.",
+                "Mentored a team of 5 junior developers and implemented rigorous code review standards.",
+                "Collaborated with UX designers to build a comprehensive design system in Figma and React."
+            ]
+        },
+        {
+            "company": "StartUp Hub",
+            "role": "Frontend Developer Intern",
+            "location": "Remote",
+            "dates": "May 2019 - Aug 2019",
+            "bulletPoints": [
+                "Developed responsive dashboard components using React and D3.js for data visualization.",
+                "Reduced bundle size by 25% through tree-shaking and lazy loading optimization.",
+                "Collaborated with the backend team to integrate RESTful APIs with frontend state management."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "E-Commerce Ultra",
+            "role": "Lead Developer",
+            "location": "Open Source",
+            "dates": "Jan 2021 - June 2021",
+            "descriptions": [
+                "Built a full-stack e-commerce platform with Next.js, Stripe, and Prisma.",
+                "Implemented real-time inventory management using WebSockets.",
+                "Designed a custom theme engine allowing users to toggle between 5 different UI modes."
+            ]
+        },
+        {
+            "name": "Dev Portfolio Framework",
+            "role": "Solo Creator",
+            "location": "Personal Project",
+            "dates": "Mar 2022 - Present",
+            "descriptions": [
+                "Created a highly customizable portfolio template for developers using Next.js.",
+                "Integrated logic for dynamic content loading from a single JSON configuration file.",
+                "Achieved 100/100 Lighthouse scores across all categories."
+            ]
+        }
+    ],
+    "activities": [
+        {
+            "organization": "Women in Tech",
+            "role": "President",
+            "location": "Stanford Chapter",
+            "dates": "Sep 2018 - June 2020",
+            "description": "Organized weekly workshops, networking events, and annual hackathons for over 200 members."
+        },
+        {
+            "organization": "Computer Science Dept",
+            "role": "Teaching Assistant",
+            "location": "Stanford University",
+            "dates": "Sep 2019 - Mar 2020",
+            "description": "Assisted in teaching 'Intro to Web Development' course, grading assignments and leading discussion sections."
+        }
+    ],
+    "skills": {
+        "Programming": "JavaScript (ES6+), TypeScript, Python, Ruby, Java",
+        "Frontend": "React, Next.js, Vue.js, Tailwind CSS, Sass, Redux",
+        "Tools & Services": "Git, Docker, AWS, Firebase, Figma, Vercel",
+        "Languages": "English (Native), Spanish (Conversational)"
+    }
+}

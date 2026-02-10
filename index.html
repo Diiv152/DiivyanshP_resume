@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Diivyansh Parekh</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-mt-24 {
+            scroll-margin-top: 6rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        zinc: {
+                            950: '#09090b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-white dark:bg-zinc-950 selection:bg-zinc-200 dark:selection:bg-zinc-800 text-zinc-900 dark:text-zinc-100">
+    <div id="content" class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 lg:gap-24 py-12 lg:py-24">
+        <!-- Left Side: Header & Nav -->
+        <aside class="lg:w-1/3 lg:sticky lg:top-24 lg:h-fit">
+            <header class="mb-12">
+                <h1 id="name" class="text-5xl font-black tracking-tighter text-zinc-900 dark:text-white mb-4"></h1>
+                <p id="title" class="text-xl font-medium text-zinc-600 dark:text-zinc-400 max-w-xs mb-8"></p>
+
+                <div class="space-y-3 mb-8">
+                    <a id="email-link" href="#"
+                        class="flex items-center gap-3 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors group">
+                        <i data-lucide="mail" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                        <span id="email" class="text-sm font-medium"></span>
+                    </a>
+                    <a id="phone-link" href="#"
+                        class="flex items-center gap-3 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors group">
+                        <i data-lucide="phone" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                        <span id="phone" class="text-sm font-medium"></span>
+                    </a>
+                    <div class="flex gap-5 pt-4">
+                        <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer"
+                            class="text-zinc-400 hover:text-blue-600 transition-colors">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a id="github-link" href="#" target="_blank" rel="noopener noreferrer"
+                            class="text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors">
+                            <i data-lucide="github" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="hidden lg:block">
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#education"
+                            class="nav-link group flex items-center transition-all text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                            data-id="education">
+                            <span
+                                class="nav-line h-px transition-all bg-zinc-900 dark:bg-white mr-4 w-6 group-hover:w-12 group-hover:bg-zinc-400"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest italic">Education</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience"
+                            class="nav-link group flex items-center transition-all text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                            data-id="experience">
+                            <span
+                                class="nav-line h-px transition-all bg-zinc-900 dark:bg-white mr-4 w-6 group-hover:w-12 group-hover:bg-zinc-400"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest italic">Experience</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="nav-link group flex items-center transition-all text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                            data-id="projects">
+                            <span
+                                class="nav-line h-px transition-all bg-zinc-900 dark:bg-white mr-4 w-6 group-hover:w-12 group-hover:bg-zinc-400"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest italic">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#activities"
+                            class="nav-link group flex items-center transition-all text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                            data-id="activities">
+                            <span
+                                class="nav-line h-px transition-all bg-zinc-900 dark:bg-white mr-4 w-6 group-hover:w-12 group-hover:bg-zinc-400"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest italic">Leadership</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="nav-link group flex items-center transition-all text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                            data-id="skills">
+                            <span
+                                class="nav-line h-px transition-all bg-zinc-900 dark:bg-white mr-4 w-6 group-hover:w-12 group-hover:bg-zinc-400"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest italic">Skills</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Right Side: Content -->
+        <main class="lg:w-2/3">
+            <section id="education" class="mb-16 scroll-mt-24">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400">
+                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Education</h2>
+                </div>
+                <div id="education-content" class="space-y-10"></div>
+            </section>
+
+            <section id="experience" class="mb-16 scroll-mt-24">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400">
+                        <i data-lucide="briefcase" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Experience</h2>
+                </div>
+                <div id="experience-content" class="space-y-10"></div>
+            </section>
+
+            <section id="projects" class="mb-16 scroll-mt-24">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400">
+                        <i data-lucide="layout" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Projects</h2>
+                </div>
+                <div id="projects-content" class="space-y-10"></div>
+            </section>
+
+            <section id="activities" class="mb-16 scroll-mt-24">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400">
+                        <i data-lucide="users" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Activities &
+                        Leadership</h2>
+                </div>
+                <div id="activities-content" class="space-y-10"></div>
+            </section>
+
+            <section id="skills" class="mb-16 scroll-mt-24">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-600 dark:text-zinc-400">
+                        <i data-lucide="code" class="w-5 h-5"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">Skills</h2>
+                </div>
+                <div id="skills-content" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+            </section>
+
+            <footer
+                class="mt-32 pt-12 border-t border-zinc-100 dark:border-zinc-900 text-zinc-400 text-sm flex justify-between items-center">
+                <p id="footer-text"></p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Back to top</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        async function loadResume() {
+            try {
+                const response = await fetch('resumeData.json');
+                const data = await response.json();
+                renderResume(data);
+            } catch (error) {
+                console.error('Error loading resume data:', error);
+            }
+        }
+
+        function createCard({ title, subtitle, location, dates, content, tags }, index) {
+            return `
+                <div class="group relative border-l-2 border-zinc-200 dark:border-zinc-800 pl-8 transition-all hover:border-zinc-500 dark:hover:border-zinc-400 animate-fade-in" style="animation-delay: ${index * 0.1}s">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                        <h3 class="text-xl font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-zinc-950 dark:group-hover:text-white transition-colors">
+                            ${title}
+                        </h3>
+                        <span class="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                            ${dates}
+                        </span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-4 text-zinc-600 dark:text-zinc-300">
+                        <span class="font-semibold">${subtitle}</span>
+                        <span class="hidden md:inline text-zinc-300 dark:text-zinc-700">|</span>
+                        <span class="text-sm italic">${location}</span>
+                    </div>
+                    <div class="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                        ${content}
+                    </div>
+                    ${tags ? `
+                        <div class="flex flex-wrap gap-2">
+                            ${tags.map(tag => `<span class="px-2 py-1 text-xs font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 rounded-md">${tag}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function renderResume(data) {
+            // Header
+            document.getElementById('name').textContent = data.header.name;
+            document.getElementById('title').textContent = data.header.title;
+            document.getElementById('email').textContent = data.header.email;
+            document.getElementById('email-link').href = `mailto:${data.header.email}`;
+            document.getElementById('phone').textContent = data.header.phone;
+            document.getElementById('phone-link').href = `tel:${data.header.phone}`;
+            document.getElementById('linkedin-link').href = data.header.linkedIn;
+            document.getElementById('github-link').href = data.header.github;
+
+            // Education
+            const eduContent = data.education.map((edu, idx) => createCard({
+                title: edu.institution,
+                subtitle: `${edu.degree} in ${edu.concentration || ''}`,
+                location: edu.location,
+                dates: edu.graduationDate,
+                content: `<div class="flex gap-4 items-center"><span class="font-bold text-zinc-900 dark:text-zinc-100">GPA ${edu.gpa}</span></div>`,
+                tags: edu.coursework
+            }, idx)).join('');
+            document.getElementById('education-content').innerHTML = eduContent;
+
+            // Experience
+            const expContent = data.experience.map((exp, idx) => createCard({
+                title: exp.company,
+                subtitle: exp.role,
+                location: exp.location,
+                dates: exp.dates,
+                content: `<ul class="list-disc list-outside ml-4 space-y-2">${exp.bulletPoints.map(p => `<li>${p}</li>`).join('')}</ul>`
+            }, idx)).join('');
+            document.getElementById('experience-content').innerHTML = expContent;
+
+            // Projects
+            const projContent = data.projects.map((proj, idx) => createCard({
+                title: proj.name,
+                subtitle: proj.role,
+                location: proj.location,
+                dates: proj.dates,
+                content: `<ul class="list-disc list-outside ml-4 space-y-2">${proj.descriptions.map(d => `<li>${d}</li>`).join('')}</ul>`
+            }, idx)).join('');
+            document.getElementById('projects-content').innerHTML = projContent;
+
+            // Activities
+            const actContent = data.activities.map((act, idx) => createCard({
+                title: act.organization,
+                subtitle: act.role,
+                location: act.location,
+                dates: act.dates,
+                content: `<p>${act.description}</p>`
+            }, idx)).join('');
+            document.getElementById('activities-content').innerHTML = actContent;
+
+            // Skills
+            const skillsContent = Object.entries(data.skills).map(([category, skills]) => `
+                <div class="bg-zinc-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-zinc-100 dark:border-zinc-800/50 hover:border-zinc-200 dark:hover:border-zinc-700 transition-colors">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-3">${category}</h4>
+                    <p class="text-zinc-700 dark:text-zinc-300 font-medium">${skills}</p>
+                </div>
+            `).join('');
+            document.getElementById('skills-content').innerHTML = skillsContent;
+
+            // Footer
+            document.getElementById('footer-text').innerHTML = `© ${new Date().getFullYear()} ${data.header.name}. Built with Static HTML & Tailwind.`;
+
+            // Initialize Lucide Icons
+            lucide.createIcons();
+
+            // Scroll Spy
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-zinc-900', 'dark:text-white', 'translate-x-2');
+                    link.classList.add('text-zinc-400', 'dark:text-zinc-500');
+                    const line = link.querySelector('.nav-line');
+                    line.classList.remove('w-12');
+                    line.classList.add('w-6');
+
+                    if (link.getAttribute('data-id') === current) {
+                        link.classList.add('text-zinc-900', 'dark:text-white', 'translate-x-2');
+                        link.classList.remove('text-zinc-400', 'dark:text-zinc-500');
+                        line.classList.add('w-12');
+                        line.classList.remove('w-6');
+                    }
+                });
+            });
+        }
+
+        loadResume();
+    </script>
+</body>
+
+</html>
