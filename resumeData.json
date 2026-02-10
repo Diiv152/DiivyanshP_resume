@@ -17,7 +17,7 @@
             "coursework": [
                 "Object Oriented Programming",
                 "Data Structures and Algorithms",
-                "GUI Development with Swing",
+                "GUI Design and Development with Swing",
                 "Digital Design and Computer Architecture"
             ]
         },
@@ -37,73 +37,59 @@
     ],
     "experience": [
         {
-            "company": "Tech Innovators Inc.",
-            "role": "Senior Frontend Engineer",
-            "location": "San Francisco, CA",
-            "dates": "Aug 2020 - Present",
+            "company": "IEEE Student Branch",
+            "role": "Tech Team Member",
+            "location": "Greater Noida, Delhi NCR",
+            "dates": "Aug 2025 - Present",
             "bulletPoints": [
-                "Led the migration of a legacy monolithic application to a modern micro-frontend architecture using Next.js and Tailwind CSS.",
-                "Optimized website performance, reducing LCP by 40% and improving SEO rankings.",
-                "Mentored a team of 5 junior developers and implemented rigorous code review standards.",
-                "Collaborated with UX designers to build a comprehensive design system in Figma and React."
+                ""
             ]
         },
         {
-            "company": "StartUp Hub",
-            "role": "Frontend Developer Intern",
-            "location": "Remote",
-            "dates": "May 2019 - Aug 2019",
+            "company": "Finvest SNU Student Chapter",
+            "role": "Tech Team Member",
+            "location": "Greater Noida, Delhi NCR",
+            "dates": "Aug 2025 - Present",
             "bulletPoints": [
-                "Developed responsive dashboard components using React and D3.js for data visualization.",
-                "Reduced bundle size by 25% through tree-shaking and lazy loading optimization.",
-                "Collaborated with the backend team to integrate RESTful APIs with frontend state management."
+                ""
             ]
         }
     ],
     "projects": [
         {
-            "name": "E-Commerce Ultra",
-            "role": "Lead Developer",
-            "location": "Open Source",
-            "dates": "Jan 2021 - June 2021",
+            "name": "Parking Management System",
+            "role": "Solo Creator",
+            "dates": "Sep 2024 - March 2025",
             "descriptions": [
-                "Built a full-stack e-commerce platform with Next.js, Stripe, and Prisma.",
-                "Implemented real-time inventory management using WebSockets.",
-                "Designed a custom theme engine allowing users to toggle between 5 different UI modes."
+                "This full-stack parking application, built with FlutterFlow and Firebase, solves real-world urban problems on a small scale via real-time parking management. Including comprehensive technical documentation, it demonstrates mastery in database architecture and cross-platform deployment, proving the ability to design, document, and scale functional, data-driven software for complex environments."
             ]
         },
         {
-            "name": "Dev Portfolio Framework",
+            "name": "AI stock market analyser ",
             "role": "Solo Creator",
-            "location": "Personal Project",
-            "dates": "Mar 2022 - Present",
+            "dates": "Dec 2025 - Present",
             "descriptions": [
-                "Created a highly customizable portfolio template for developers using Next.js.",
-                "Integrated logic for dynamic content loading from a single JSON configuration file.",
-                "Achieved 100/100 Lighthouse scores across all categories."
+                "In Progress"
             ]
         }
     ],
-    "activities": [
+    "certifications": [
         {
-            "organization": "Women in Tech",
-            "role": "President",
-            "location": "Stanford Chapter",
-            "dates": "Sep 2018 - June 2020",
-            "description": "Organized weekly workshops, networking events, and annual hackathons for over 200 members."
+            "organization": "Harvard University",
+            "title": "CS50 Certificate",
+            "date": "June 2024",
+            "description": "A rigorous 12-week introduction to computer science. Mastering Python, students complete intense problem sets for 9 weeks and a complex final project, proving their ability to build full-stack applications and solve sophisticated, low-level algorithmic challenges."
         },
         {
-            "organization": "Computer Science Dept",
-            "role": "Teaching Assistant",
-            "location": "Stanford University",
-            "dates": "Sep 2019 - Mar 2020",
-            "description": "Assisted in teaching 'Intro to Web Development' course, grading assignments and leading discussion sections."
+            "organization": "Geeks for Geeks",
+            "title": "Data Structures and Algorithms Bootcamp",
+            "date": "Nov 2025",
+            "description": "Live, industry-standard bootcamp focused on mastering data structures and algorithms"
         }
     ],
     "skills": {
-        "Programming": "JavaScript (ES6+), TypeScript, Python, Ruby, Java",
-        "Frontend": "React, Next.js, Vue.js, Tailwind CSS, Sass, Redux",
-        "Tools & Services": "Git, Docker, AWS, Firebase, Figma, Vercel",
-        "Languages": "English (Native), Spanish (Conversational)"
+        "Programming": "Python,Java",
+        "Tools & Services": "Git, Springboot, AWS, Firebase, FlutterFlow, Numpy and Pandas(in progress)",
+        "Languages": "Gujarati (Native), Hindi (Conversational), English (Fluent)"
     }
 }
